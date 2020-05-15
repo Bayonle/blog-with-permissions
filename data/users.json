@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "username": "andy",
+            "role": {
+                "name": "publisher",
+                "permissions": [
+                    {
+                        "name": "publish post",
+                        "code": 101
+                    },
+                    {
+                        "name": "approve comment",
+                        "code": 102
+                    },
+                    {
+                        "name": "reject comment",
+                        "code": 103
+                    },
+                    {
+                        "name": "ban user",
+                        "code": 104
+                    }
+                ]
+            }
+        }
+    ]
+}
