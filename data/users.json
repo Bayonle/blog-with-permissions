@@ -6,19 +6,23 @@
                 "name": "publisher",
                 "permissions": [
                     {
-                        "name": "publish post",
+                        "name": "publish_post",
                         "code": 101
                     },
                     {
-                        "name": "approve comment",
+                        "name": "approve_comment",
                         "code": 102
                     },
                     {
-                        "name": "reject comment",
+                        "name": "reject_comment",
                         "code": 103
                     },
                     {
-                        "name": "ban user",
+                        "name": "ban_user",
+                        "code": 104
+                    },
+                    {
+                        "name": "ban_user",
                         "code": 104
                     }
                 ]
