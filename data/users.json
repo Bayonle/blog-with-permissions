@@ -10,10 +10,6 @@
                         "code": 101
                     },
                     {
-                        "name": "approve_comment",
-                        "code": 102
-                    },
-                    {
                         "name": "reject_comment",
                         "code": 103
                     },

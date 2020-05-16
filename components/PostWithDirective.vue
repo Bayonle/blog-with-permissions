@@ -6,11 +6,9 @@
             <!-- <span v-html="status"></span> -->
         </div>
         <div class="flex items-center mt-5">
-            <can-do allowed="review_post">
-                <button  @click="review" class="rounded px-4 py-2 text-sm bg-blue-500 text-white">Review</button>
-            </can-do>
-            <button v-if="$auth.can('approve_post')" @click="approve" class="rounded px-4 py-2 text-sm bg-blue-500 text-white mx-3">Approve</button>
-            <button v-if="$auth.can('publish_post')" @click="publish" class="rounded px-4 py-2 text-sm bg-blue-500 text-white">Publish</button>
+            <button v-can-do="'approve_post'"  @click="review" class="rounded px-4 py-2 text-sm bg-blue-500 text-white">Review</button>
+            <button v-can-do="'approve_post'"  @click="approve" class="rounded px-4 py-2 text-sm bg-blue-500 text-white mx-3">Approve</button>
+            <button v-can-do="'publish_post'" @click="publish" class="rounded px-4 py-2 text-sm bg-blue-500 text-white">Publish</button>
         </div>
     </div>
 </template>
@@ -20,6 +18,11 @@ import CanDo from '@/components/CanDo'
 export default {
     components:{
         CanDo
+    },
+    data(){
+        return {
+            direction: 'right'
+        }
     },
     computed:{
         status(){
